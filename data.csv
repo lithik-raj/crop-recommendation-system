@@ -1,0 +1,15 @@
+Nitrogen,Phosphorous,Potassium,Temperature,Humidity,Rainfall,Crop
+90,42,43,20.8,82,202,Rice
+85,58,41,21.7,80,226,Rice
+60,55,44,23.0,60,100,Wheat
+62,60,40,24.5,58,110,Wheat
+74,35,40,26.0,70,150,Maize
+78,40,38,27.5,65,140,Maize
+20,15,10,30.0,40,50,Millet
+25,18,12,31.5,42,45,Millet
+50,50,50,25.0,75,120,Cotton
+55,45,48,26.5,78,130,Cotton
+40,35,30,28.0,65,90,Sugarcane
+45,38,35,29.0,68,95,Sugarcane
+70,65,60,24.0,80,180,Barley
+72,68,62,23.5,82,175,Barley

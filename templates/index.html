@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Crop Recommendation System</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="background-animation"></div>
+
+    <div class="container">
+      <div class="card">
+        <h1 class="main-title">🌱 Crop Recommendation System</h1>
+
+        <p class="subtitle">AI Powered Smart Agriculture Prediction</p>
+
+        <form action="/predict" method="POST">
+          <div class="input-group">
+            <label>🧪 Nitrogen</label>
+            <input
+              type="number"
+              step="any"
+              name="Nitrogen"
+              placeholder="Enter Nitrogen Value"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label>🧬 Phosphorous</label>
+            <input
+              type="number"
+              step="any"
+              name="Phosphorous"
+              placeholder="Enter Phosphorous Value"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label>⚡ Potassium</label>
+            <input
+              type="number"
+              step="any"
+              name="Potassium"
+              placeholder="Enter Potassium Value"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label>🌡 Temperature</label>
+            <input
+              type="number"
+              step="any"
+              name="Temperature"
+              placeholder="Enter Temperature"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label>💧 Humidity</label>
+            <input
+              type="number"
+              step="any"
+              name="Humidity"
+              placeholder="Enter Humidity"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label>🌧 Rainfall</label>
+            <input
+              type="number"
+              step="any"
+              name="Rainfall"
+              placeholder="Enter Rainfall"
+              required
+            />
+          </div>
+
+          <button type="submit">🚀 Predict Best Crop</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

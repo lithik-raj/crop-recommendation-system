@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prediction Result</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="background-animation"></div>
+
+    <div class="container">
+      <div class="card result-card">
+        <h1 class="main-title">🌾 Recommended Crop</h1>
+
+        <div class="prediction-box">
+          <h2>{{ prediction }}</h2>
+
+          <p>Best suitable crop based on soil & climate conditions</p>
+        </div>
+
+        <a href="/" class="back-btn"> 🔄 Predict Again </a>
+      </div>
+    </div>
+  </body>
+</html>

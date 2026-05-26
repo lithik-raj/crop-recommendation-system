@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #050816;
+}
+
+/* Animated Background */
+
+.background-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at top left, #00ffcc33, transparent 30%),
+    radial-gradient(circle at bottom right, #00bfff33, transparent 30%),
+    linear-gradient(135deg, #050816, #0b132b, #1c2541);
+  animation: bgMove 10s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes bgMove {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Main Container */
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Glassmorphism Card */
+
+.card {
+  width: 430px;
+  padding: 40px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  box-shadow:
+    0 0 30px rgba(0, 255, 200, 0.2),
+    0 0 60px rgba(0, 191, 255, 0.15);
+  animation: floatCard 3s ease-in-out infinite;
+}
+
+/* Floating Animation */
+
+@keyframes floatCard {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Heading */
+
+.main-title {
+  text-align: center;
+  color: white;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 0 15px #00ffcc;
+}
+
+.subtitle {
+  text-align: center;
+  color: #cfd8dc;
+  margin-bottom: 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Inputs */
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.input-group input {
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 15px #00ffcc55;
+  transform: scale(1.02);
+}
+
+.input-group input::placeholder {
+  color: #b0bec5;
+}
+
+/* Button */
+
+button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #00ffcc, #00bfff);
+  color: #04111d;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.4s;
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow:
+    0 0 20px #00ffcc,
+    0 0 40px #00bfff;
+}
+
+/* Result */
+
+.prediction-box {
+  margin: 30px 0;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.prediction-box h2 {
+  color: #00ffcc;
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 20px #00ffcc;
+}
+
+.prediction-box p {
+  color: #dfe6e9;
+  font-size: 14px;
+}
+
+/* Back Button */
+
+.back-btn {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  border-radius: 18px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #00ffcc, #00bfff);
+  color: #04111d;
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+.back-btn:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 20px #00ffcc,
+    0 0 40px #00bfff;
+}
